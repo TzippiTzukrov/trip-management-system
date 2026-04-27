@@ -1,0 +1,77 @@
+.right-management-sidebar {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: #fff;
+  border-left: 1px solid #e0e0e0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+.right-management-sidebar hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0.5rem 0;
+}
+
+.right-management-sidebar button {
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: right;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+}
+
+.right-management-sidebar button:hover {
+  background-color: #e9ecef;
+}
+
+.right-management-sidebar form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.right-management-sidebar form > div {
+  display: flex;
+  gap: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.right-management-sidebar form > div input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.right-management-sidebar form > div button[type="submit"] {
+  width: auto !important;
+  flex-shrink: 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.right-management-sidebar form > div button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #d8000c;
+  font-size: 0.85rem;
+}

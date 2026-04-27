@@ -1,0 +1,74 @@
+.locations-sidebar {
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: #fff;
+  border-left: 1px solid #e0e0e0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  box-sizing: border-box;
+}
+
+.locations-sidebar button[type="button"] {
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: right;
+  transition: background-color 0.2s;
+  box-sizing: border-box;
+}
+
+.locations-sidebar button[type="button"]:hover {
+  background-color: #e9ecef;
+}
+
+.locations-sidebar form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.locations-sidebar .input-row,
+.locations-sidebar form > div {
+  display: flex;
+  gap: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.locations-sidebar .input-row input,
+.locations-sidebar form > div input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.locations-sidebar .submit-btn,
+.locations-sidebar form > div button[type="submit"] {
+  flex-shrink: 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.locations-sidebar .submit-btn:hover,
+.locations-sidebar form > div button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.locations-sidebar .error-message {
+  color: #d8000c;
+  font-size: 0.85rem;
+}
