@@ -27,7 +27,7 @@ export default function useAuth() {
 
   const registerStudent = async (details) => {
     const res = await addStudent(details);
-    return res.student;
+    return res;
   };
 
   const registerTeacher = async (details) => {

@@ -1,32 +1,9 @@
-const API_URL = 'http://localhost:5000/api/students';
+import { POST, GET } from './genericService';
 
-const getToken = () => localStorage.getItem('token');
+const API_URL = '/students';
 
-export const addStudent = async (studentData) => {
-  const res = await fetch(API_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(studentData),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
+export const addStudent = (studentData) => POST(studentData, API_URL);
 
-export const getAllStudents = async () => {
-  const res = await fetch(API_URL, {
-    headers: { Authorization: `Bearer ${getToken()}` },
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
+export const getAllStudents = () => GET(API_URL);
 
-export const getStudentById = async (id) => {
-  const res = await fetch(`${API_URL}/${id}`, {
-    headers: { Authorization: `Bearer ${getToken()}` },
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
+export const getStudentById = (id) => GET(`${API_URL}/${id}`);

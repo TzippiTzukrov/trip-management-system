@@ -1,5 +1,0 @@
-1. do the services in the client and the routes in the server generic
-2. ManagementContent.jsx read that code and ManagementSidebar.jsx
-3. add lables on the inputs in the login and register page
-4. do json to run postman
-5. to fix the content layout and to fit it to hebrow in the management ManagementContent
