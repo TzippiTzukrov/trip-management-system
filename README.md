@@ -44,10 +44,10 @@ A full-stack real-time system for managing school trips, including live student 
 ### Teacher Dashboard
 After logging in as a teacher, you will see the management dashboard where you can:
 - View all registered students
-- Add new students
-- Edit student information
-- Delete students
-
+- View all registered teachers
+- View a specific teacher / student by ID
+- View students by class
+  
 ![Management Dashboard](screenshots/management.png)
 
 ### Location Tracking
