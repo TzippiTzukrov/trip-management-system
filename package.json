@@ -1,0 +1,31 @@
+{
+  "name": "school-trip",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "version": "1.0.0",
+  "description": "Full-stack system for managing a school trip, including student/teacher management and real-time location tracking on a map.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TzippiTzukrov/trip-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TzippiTzukrov/trip-management-system/issues"
+  },
+  "homepage": "https://github.com/TzippiTzukrov/trip-management-system#readme",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "mongodb": "^7.2.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.14.2"
+  }
+}

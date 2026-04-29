@@ -1,0 +1,5 @@
+/* ManagementPage minimal styling */
+.management-page {
+  display: flex;
+  height: 100vh;
+}

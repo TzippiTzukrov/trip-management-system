@@ -1,0 +1,22 @@
+/* LocationsPage minimal styling */
+.locations-page {
+  display: flex;
+  height: 100vh;
+}
+
+.warning {
+  position: fixed;
+  top: 250px;
+  right: 0.3rem;
+  width: fit-content;
+  max-width: 300px;
+  background-color: #ffcccc;
+  color: #d8000c;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.warning ul {
+  list-style: none;
+  padding: 0;
+}
